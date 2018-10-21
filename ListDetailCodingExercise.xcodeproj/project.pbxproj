@@ -11,13 +11,30 @@
 		268E1A9ED6C002F1389732BE /* Pods_ListDetailCodingExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78943BA0D6CDD1626C404C5 /* Pods_ListDetailCodingExercise.framework */; };
 		A9D70E983C6F6160DC620C25 /* Pods_ListDetailCodingExerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C768D644CD2A09BE5D88E7 /* Pods_ListDetailCodingExerciseTests.framework */; };
 		D3A5846C217BF248004435FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A5846B217BF248004435FA /* AppDelegate.swift */; };
-		D3A5846E217BF248004435FA /* ProListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A5846D217BF248004435FA /* ProListViewController.swift */; };
+		D3A5846E217BF248004435FA /* ProCompanyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A5846D217BF248004435FA /* ProCompanyListViewController.swift */; };
 		D3A58473217BF249004435FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A58472217BF249004435FA /* Assets.xcassets */; };
 		D3A58476217BF249004435FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A58474217BF249004435FA /* LaunchScreen.storyboard */; };
 		D3A58481217BF249004435FA /* ListDetailCodingExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A58480217BF249004435FA /* ListDetailCodingExerciseTests.swift */; };
 		D3A5848C217BF249004435FA /* ListDetailCodingExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A5848B217BF249004435FA /* ListDetailCodingExerciseUITests.swift */; };
 		D3A584A9217BFAC5004435FA /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = D3A584A8217BFAC5004435FA /* Podfile.lock */; };
 		D3A584B3217C059E004435FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A584B2217C059E004435FA /* Main.storyboard */; };
+		D3A584BB217C0837004435FA /* ProCompanyEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584BA217C0837004435FA /* ProCompanyEndpoint.swift */; };
+		D3A584BD217C083F004435FA /* ProCompanyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584BC217C083F004435FA /* ProCompanyService.swift */; };
+		D3A584BF217C092E004435FA /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584BE217C092E004435FA /* BaseService.swift */; };
+		D3A584C1217C0AAE004435FA /* ProCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584C0217C0AAE004435FA /* ProCompany.swift */; };
+		D3A584C6217C0C39004435FA /* ProCompanyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584C5217C0C39004435FA /* ProCompanyListPresenter.swift */; };
+		D3A584C8217C0CA9004435FA /* ProCompanyViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584C7217C0CA9004435FA /* ProCompanyViewable.swift */; };
+		D3A584CA217C0CEB004435FA /* ProCompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584C9217C0CEB004435FA /* ProCompanyViewModel.swift */; };
+		D3A584CC217C1171004435FA /* ProCompanyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584CB217C1171004435FA /* ProCompanyRepository.swift */; };
+		D3A584CF217C156C004435FA /* ProCompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A584CE217C156C004435FA /* ProCompanyTableViewCell.xib */; };
+		D3A584D1217C1577004435FA /* ProCompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584D0217C1577004435FA /* ProCompanyTableViewCell.swift */; };
+		D3A584D3217C1BC7004435FA /* ProCompanyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584D2217C1BC7004435FA /* ProCompanyListViewModel.swift */; };
+		D3A584D5217C242C004435FA /* ProCompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584D4217C242C004435FA /* ProCompanyDetailViewController.swift */; };
+		D3A584DB217C2601004435FA /* ProCompanyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A584DA217C2601004435FA /* ProCompanyDetailViewController.xib */; };
+		D3A584DD217C284A004435FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D3A584DC217C284A004435FA /* README.md */; };
+		D3A584E1217C2FD4004435FA /* CallToActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584E0217C2FD4004435FA /* CallToActionButton.swift */; };
+		D3A584E3217C3258004435FA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A584E2217C3258004435FA /* Colors.xcassets */; };
+		D3A584E6217C32CE004435FA /* ApplicationColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A584E5217C32CE004435FA /* ApplicationColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +66,7 @@
 		D30433F543D6FAF62BEF99E6 /* Pods-ListDetailCodingExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListDetailCodingExercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListDetailCodingExercise/Pods-ListDetailCodingExercise.release.xcconfig"; sourceTree = "<group>"; };
 		D3A58468217BF248004435FA /* ListDetailCodingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListDetailCodingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A5846B217BF248004435FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3A5846D217BF248004435FA /* ProListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProListViewController.swift; sourceTree = "<group>"; };
+		D3A5846D217BF248004435FA /* ProCompanyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyListViewController.swift; sourceTree = "<group>"; };
 		D3A58472217BF249004435FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3A58475217BF249004435FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3A58477217BF249004435FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +81,23 @@
 		D3A5849D217BF58A004435FA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		D3A584A8217BFAC5004435FA /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		D3A584B2217C059E004435FA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D3A584BA217C0837004435FA /* ProCompanyEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyEndpoint.swift; sourceTree = "<group>"; };
+		D3A584BC217C083F004435FA /* ProCompanyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyService.swift; sourceTree = "<group>"; };
+		D3A584BE217C092E004435FA /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		D3A584C0217C0AAE004435FA /* ProCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompany.swift; sourceTree = "<group>"; };
+		D3A584C5217C0C39004435FA /* ProCompanyListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyListPresenter.swift; sourceTree = "<group>"; };
+		D3A584C7217C0CA9004435FA /* ProCompanyViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyViewable.swift; sourceTree = "<group>"; };
+		D3A584C9217C0CEB004435FA /* ProCompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyViewModel.swift; sourceTree = "<group>"; };
+		D3A584CB217C1171004435FA /* ProCompanyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyRepository.swift; sourceTree = "<group>"; };
+		D3A584CE217C156C004435FA /* ProCompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProCompanyTableViewCell.xib; sourceTree = "<group>"; };
+		D3A584D0217C1577004435FA /* ProCompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyTableViewCell.swift; sourceTree = "<group>"; };
+		D3A584D2217C1BC7004435FA /* ProCompanyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyListViewModel.swift; sourceTree = "<group>"; };
+		D3A584D4217C242C004435FA /* ProCompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCompanyDetailViewController.swift; sourceTree = "<group>"; };
+		D3A584DA217C2601004435FA /* ProCompanyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProCompanyDetailViewController.xib; sourceTree = "<group>"; };
+		D3A584DC217C284A004435FA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D3A584E0217C2FD4004435FA /* CallToActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallToActionButton.swift; sourceTree = "<group>"; };
+		D3A584E2217C3258004435FA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D3A584E5217C32CE004435FA /* ApplicationColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +161,7 @@
 				D3A5849D217BF58A004435FA /* .swiftlint.yml */,
 				D3A58499217BF2F9004435FA /* Podfile */,
 				D3A584A8217BFAC5004435FA /* Podfile.lock */,
+				D3A584DC217C284A004435FA /* README.md */,
 				D3A58469217BF248004435FA /* Products */,
 				5194122DCC2D3A1FF73E3A1B /* Pods */,
 				AAE4FD9BFAF2EC05DCD73F50 /* Frameworks */,
@@ -146,9 +181,11 @@
 		D3A5846A217BF248004435FA /* ListDetailCodingExercise */ = {
 			isa = PBXGroup;
 			children = (
+				D3A584B4217C079F004435FA /* Data */,
 				D3A584AA217BFAF0004435FA /* Resources */,
 				D3A584A5217BFA2A004435FA /* SupportingFiles */,
 				D3A584A4217BFA20004435FA /* UI */,
+				D3A584E4217C32BC004435FA /* Utils */,
 			);
 			path = ListDetailCodingExercise;
 			sourceTree = "<group>";
@@ -174,8 +211,9 @@
 		D3A584A4217BFA20004435FA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D3A584E7217C35D9004435FA /* Components */,
+				D3A584C4217C0C02004435FA /* ProCompany */,
 				D3A584B2217C059E004435FA /* Main.storyboard */,
-				D3A5846D217BF248004435FA /* ProListViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -194,8 +232,77 @@
 			isa = PBXGroup;
 			children = (
 				D3A58472217BF249004435FA /* Assets.xcassets */,
+				D3A584E2217C3258004435FA /* Colors.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3A584B4217C079F004435FA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D3A584B8217C07EF004435FA /* Models */,
+				D3A584B9217C07FA004435FA /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D3A584B8217C07EF004435FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3A584C0217C0AAE004435FA /* ProCompany.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3A584B9217C07FA004435FA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D3A584CD217C12C1004435FA /* Shared */,
+				D3A584BA217C0837004435FA /* ProCompanyEndpoint.swift */,
+				D3A584CB217C1171004435FA /* ProCompanyRepository.swift */,
+				D3A584BC217C083F004435FA /* ProCompanyService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D3A584C4217C0C02004435FA /* ProCompany */ = {
+			isa = PBXGroup;
+			children = (
+				D3A584D4217C242C004435FA /* ProCompanyDetailViewController.swift */,
+				D3A584DA217C2601004435FA /* ProCompanyDetailViewController.xib */,
+				D3A584C5217C0C39004435FA /* ProCompanyListPresenter.swift */,
+				D3A5846D217BF248004435FA /* ProCompanyListViewController.swift */,
+				D3A584D2217C1BC7004435FA /* ProCompanyListViewModel.swift */,
+				D3A584D0217C1577004435FA /* ProCompanyTableViewCell.swift */,
+				D3A584CE217C156C004435FA /* ProCompanyTableViewCell.xib */,
+				D3A584C7217C0CA9004435FA /* ProCompanyViewable.swift */,
+				D3A584C9217C0CEB004435FA /* ProCompanyViewModel.swift */,
+			);
+			path = ProCompany;
+			sourceTree = "<group>";
+		};
+		D3A584CD217C12C1004435FA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D3A584BE217C092E004435FA /* BaseService.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D3A584E4217C32BC004435FA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D3A584E5217C32CE004435FA /* ApplicationColor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D3A584E7217C35D9004435FA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D3A584E0217C2FD4004435FA /* CallToActionButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +417,11 @@
 				D3A58476217BF249004435FA /* LaunchScreen.storyboard in Resources */,
 				D3A584A9217BFAC5004435FA /* Podfile.lock in Resources */,
 				D3A58473217BF249004435FA /* Assets.xcassets in Resources */,
+				D3A584DD217C284A004435FA /* README.md in Resources */,
+				D3A584CF217C156C004435FA /* ProCompanyTableViewCell.xib in Resources */,
+				D3A584E3217C3258004435FA /* Colors.xcassets in Resources */,
 				D3A584B3217C059E004435FA /* Main.storyboard in Resources */,
+				D3A584DB217C2601004435FA /* ProCompanyDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +541,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A5846E217BF248004435FA /* ProListViewController.swift in Sources */,
+				D3A5846E217BF248004435FA /* ProCompanyListViewController.swift in Sources */,
+				D3A584C1217C0AAE004435FA /* ProCompany.swift in Sources */,
+				D3A584BD217C083F004435FA /* ProCompanyService.swift in Sources */,
 				D3A5846C217BF248004435FA /* AppDelegate.swift in Sources */,
+				D3A584BF217C092E004435FA /* BaseService.swift in Sources */,
+				D3A584CA217C0CEB004435FA /* ProCompanyViewModel.swift in Sources */,
+				D3A584D5217C242C004435FA /* ProCompanyDetailViewController.swift in Sources */,
+				D3A584C6217C0C39004435FA /* ProCompanyListPresenter.swift in Sources */,
+				D3A584E1217C2FD4004435FA /* CallToActionButton.swift in Sources */,
+				D3A584E6217C32CE004435FA /* ApplicationColor.swift in Sources */,
+				D3A584D1217C1577004435FA /* ProCompanyTableViewCell.swift in Sources */,
+				D3A584D3217C1BC7004435FA /* ProCompanyListViewModel.swift in Sources */,
+				D3A584CC217C1171004435FA /* ProCompanyRepository.swift in Sources */,
+				D3A584C8217C0CA9004435FA /* ProCompanyViewable.swift in Sources */,
+				D3A584BB217C0837004435FA /* ProCompanyEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
