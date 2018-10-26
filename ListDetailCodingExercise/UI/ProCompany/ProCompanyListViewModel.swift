@@ -1,25 +1,35 @@
 import Foundation
 
 struct ProCompanyListViewModel {
-    var companies = [ProCompanyViewModel]()
 
-    var count: Int {
-        return companies.count
-    }
+    // Maybe use CompanySpecialityHashKey?
+    var companiesDict: [String: [ProCompanyViewModel]]
+
+    var keys: [String]
 
     init(companies: [ProCompany]) {
-        self.companies = companies.map { company in
-            return ProCompanyViewModel(proCompany: company)
-        }
-        self.companies.sort { (company1, company2) -> Bool in
-            return company1.companyName < company2.companyName
-        }
-    }
+        self.keys = Array(Set(companies.map { company in
+            return company.specialty
+        }))
 
-    func getCompany(at index: Int) -> ProCompanyViewModel? {
-        if companies.count > index {
-            return companies[index]
+        let companies = companies.map { company in
+            return ProCompanyViewModel(proCompany: company)
+            }.sorted { (company1, company2) -> Bool in
+                return company1.companyName < company2.companyName
         }
-        return nil
+
+        self.companiesDict = [String: [ProCompanyViewModel]]()
+
+        companies.forEach { company in
+            if self.companiesDict[company.specialty] == nil {
+                self.companiesDict[company.specialty] = [ProCompanyViewModel]()
+                self.companiesDict[company.specialty]?.append(company)
+            } else {
+                self.companiesDict[company.specialty]?.append(company)
+            }
+        }
+        self.keys.sort { (speciality1, speciality2) -> Bool in
+            return speciality1 < speciality2
+        }
     }
 }

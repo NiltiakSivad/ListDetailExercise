@@ -151,6 +151,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D38D0CC921838A4300289A7F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D3A584D4217C242C004435FA /* ProCompanyDetailViewController.swift */,
+				D3A584DA217C2601004435FA /* ProCompanyDetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		D3A5845F217BF248004435FA = {
 			isa = PBXGroup;
 			children = (
@@ -268,8 +277,7 @@
 		D3A584C4217C0C02004435FA /* ProCompany */ = {
 			isa = PBXGroup;
 			children = (
-				D3A584D4217C242C004435FA /* ProCompanyDetailViewController.swift */,
-				D3A584DA217C2601004435FA /* ProCompanyDetailViewController.xib */,
+				D38D0CC921838A4300289A7F /* Detail */,
 				D3A584C5217C0C39004435FA /* ProCompanyListPresenter.swift */,
 				D3A5846D217BF248004435FA /* ProCompanyListViewController.swift */,
 				D3A584D2217C1BC7004435FA /* ProCompanyListViewModel.swift */,
